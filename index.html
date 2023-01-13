@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body onresize="MudouTamanho()">
 
   <header>
     <section class="max-width header-bar">
@@ -122,12 +122,18 @@
 
 
   <script>
-    function ClicarMenuLanche() {
-      var itensMenu = document.getElementById('itensMenuNAV');
+    var itensMenu = document.getElementById('itensMenuNAV');
 
+    function ClicarMenuLanche() {
       if (itensMenu.style.display == 'none') {
         itensMenu.style.display = 'block'
       } else {
+        itensMenu.style.display = 'none'
+      }
+    }
+
+    function MudouTamanho() {
+      if (window.innerWidth >= 992) {
         itensMenu.style.display = 'none'
       }
     }
