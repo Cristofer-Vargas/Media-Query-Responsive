@@ -1,0 +1,268 @@
+/* Configuração de estilos gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+:root {
+  --cor-destaque: #6446A6;
+  --cor-secundaria: #002233;
+}
+
+div,section.max-width {
+  max-width: 993px;
+  margin: 0 auto;
+  /* padding: 0 20px; */
+  /* background-color: rgba(255, 0, 0, 0.151); */
+}
+
+/* Cabeçalho */
+
+header {
+  width: 100%;
+  min-height: 80px;
+
+  background-color: var(--cor-secundaria);
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.479);
+}
+
+header a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 10px #6446A6;
+}
+
+header > section {
+  height: 100%;
+}
+
+header > section.header-bar {
+  height: 80px;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+header nav .span-menu-hamburguer {
+  display: none;
+}
+
+header ul.links-navegation {
+  width: 450px;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  /* margin-right: 120px; */
+}
+
+div.logo-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.logo-div span.style-logo {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+}
+
+
+
+
+/* Navegação por Menu Hamburguer */
+
+nav.menu-bar-low-width {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background-color: #002233;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.479);
+}
+
+nav.menu-bar-low-width > section {
+  width: 100%;
+  height: 100%;
+}
+
+nav.menu-bar-low-width ul {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav.menu-bar-low-width a,li {
+  text-decoration: none;
+  list-style: none;
+  color: var(--cor-destaque);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+nav.menu-bar-low-width a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 10px #6446A6;
+}
+
+
+/* Corpo da página */
+
+main {
+  width: 100%;
+}
+
+img.wave-svg-division-top {
+  width: 100%;
+  margin-bottom: -8px;
+}
+
+img.wave-svg-division-bottom {
+  width: 100%;
+  margin-top: -8px;
+}
+
+/* Primeira Section */
+
+div.section-outdoor {
+  min-height: 70vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div.introduction-outdoor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.introduction-outdoor h1 {
+  color: var(--cor-destaque);
+  font-size: 3.8em;
+  font-weight: 900;
+  line-height: 0.9em;
+  text-shadow: 2px 2px var(--cor-secundaria);
+  
+  margin-bottom: 20px;
+}
+
+div.introduction-outdoor p{
+  line-height: 1.8em;
+}
+
+div.image-outdoor {
+  display: flex;
+  align-items: center;
+}
+
+div.image-outdoor img {
+  width: 100%;
+}
+
+
+
+
+/* Segunda Section */
+
+main > section.content {
+  width: 100%;
+  min-height: 400px;
+
+  background-color: #002233;
+
+  display: flex;
+  align-items: center;
+  /* padding: 100px 0; */
+}
+
+div.section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  height: auto;
+  align-items: center;
+}
+
+div.image-first-content {
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.image-first-content div {
+  width: 250px;
+  height: 250px;
+  background-color: #6446A6;
+  box-shadow: 6px 6px 0px 0px #342457;
+}
+
+div.content-first-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.content-first-content h2 {
+  color: var(--cor-destaque);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+div.content-first-content p {
+  color: #fff;
+  line-height: 1.7em;
+}
+
+div.content-first-content a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  font-style: italic;
+}
+
+
+/* Rodapé */
+
+footer {
+  width: 100%;
+  height: 100px;
+}
+
+footer section.rodape-content {
+  display: flex;
+  align-items: center;
+}

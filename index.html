@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Responsivo | Media Query</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link rel="stylesheet" href="style/style.css" media="all">
+  <link rel="stylesheet" href="style/media-queries.css">
+
+  <link rel="shortcut icon" href="images/celular-icon.svg" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+  <header>
+    <section class="max-width header-bar">
+      <nav>
+        <span id="menu-click-hamburguer" class="material-symbols-outlined span-menu-hamburguer" onclick="ClicarMenuLanche()">
+          menu
+        </span>
+        <ul class="links-navegation">
+          <li>
+            <a href="#">Página Inicial</a>
+          </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+          <li>
+            <a href="#">Carrinho</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+        <div class="logo-div">
+          <span class="style-logo">
+            Responsividade
+          </span>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <nav id="itensMenuNAV" class="menu-bar-low-width">
+    <section class="max-width">
+      <ul class="links-navegation">
+        <li>
+          <a href="#">Página Inicial</a>
+        </li>
+        <li>
+          <a href="#">Contato</a>
+        </li>
+        <li>
+          <a href="#">Carrinho</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+    </section>
+  </nav>
+
+  <main>
+
+    <section>
+      <div class="max-width section-outdoor">
+        <div class="introduction-outdoor">
+          <h1>Testando Media Queries</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit pariatur nisi quas velit. Iusto quaerat
+            expedita ipsa provident dolores sequi unde vel, in, quisquam iure officia, nemo nostrum temporibus illum!
+          </p>
+        </div>
+        <div class="image-outdoor">
+          <img src="images/phone-hand.png" alt="Celular na mão">
+        </div>
+      </div>
+    </section>
+
+    <img class="wave-svg-division-top" src="images/wave-haikei-up.svg" alt="wave">
+
+    <section class="content">
+      <div class="max-width section-content">
+        <div class="image-first-content">
+          <div></div>
+        </div>
+
+        <div class="content-first-content">
+          <h2>Media Query is ON</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fuga, sed soluta repellat ab commodi iure
+            voluptatem maiores, facere dicta hic atque impedit! Quaerat vero laudantium impedit, quod totam reiciendis.
+          </p>
+          <p>
+            <span>
+              <a href="#">See More...</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <img class="wave-svg-division-bottom" src="images/wave-haikei-down.svg" alt="wave">
+  </main>
+
+  <footer>
+    <section class="max-width rodape-content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, numquam vero accusamus in praesentium
+        exercitationem commodi fugiat debitis excepturi sunt odio illum ducimus quia quidem dolorem quam! Eaque, harum
+        tenetur.
+      </p>
+    </section>
+  </footer>
+
+
+
+  <script>
+    function ClicarMenuLanche() {
+      var itensMenu = document.getElementById('itensMenuNAV');
+
+      if (itensMenu.style.display == 'none') {
+        itensMenu.style.display = 'block'
+      } else {
+        itensMenu.style.display = 'none'
+      }
+    }
+  </script>
+</body>
+
+</html>

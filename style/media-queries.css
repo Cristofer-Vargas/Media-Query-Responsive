@@ -1,0 +1,85 @@
+/* Folha de estilos para dispositivos com os respectivos tamanhos de media */
+
+@media screen and (max-width: 992px) {
+  div,section.max-width {
+    max-width: 95%;
+  }
+
+  /* Cabeçalho da página */
+
+  header nav {
+    justify-content: space-between;
+  }
+
+  header nav .span-menu-hamburguer {
+    /* width: 577px; */
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 0px 0px 10px #6446A6;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+  }
+
+  div.logo-div {
+    margin: 0;
+  }
+
+  header ul.links-navegation {
+    display: none;
+  }
+
+
+  /* Corpo da página */
+
+  div.section-outdoor {
+    min-height: 80vh;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+@media screen and (max-width: 769px) {
+
+  /* Header */
+
+  div.logo-div span.style-logo {
+    font-size: 1.5em;
+  }
+
+
+  /* Primeira Section */
+
+  div.section-outdoor {
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+  }
+
+  div.image-outdoor img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  div.introduction-outdoor h1 {
+    font-size: 3em;
+  }
+
+
+  /* Segunda Section */
+
+  main > section.content {
+    height: 600px;
+  }
+
+
+  div.section-content {
+    grid-template-columns: 1fr;
+  }
+
+  div.image-first-content div {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
